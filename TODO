@@ -2,7 +2,12 @@ TODO LIST
 ---------
 
 [x] models.py 
-[x] api views 
+[x] apis views 
 [x] services 
 [x] selectors
 [x] urls
+[x] user model - cookiecutter
+[x] register - cookiecutter
+[x] profile - cookiecutter
+[] jwt
+[] services

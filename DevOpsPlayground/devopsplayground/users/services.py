@@ -1,4 +1,4 @@
-from django.db import transaction 
+from django.db import transaction
 from .models import BaseUser, Profile
 
 

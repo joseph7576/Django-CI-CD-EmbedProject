@@ -8,7 +8,7 @@ from .validators import number_validator, special_char_validator, letter_validat
 from devopsplayground.users.models import BaseUser , Profile
 from devopsplayground.api.mixins import ApiAuthMixin
 from devopsplayground.users.selectors import get_profile
-from devopsplayground.users.services import register 
+from devopsplayground.users.services import register
 from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
 
 from drf_spectacular.utils import extend_schema
@@ -18,7 +18,7 @@ class ProfileApi(ApiAuthMixin, APIView):
 
     class OutPutSerializer(serializers.ModelSerializer):
         class Meta:
-            model = Profile 
+            model = Profile
             fields = ("bio", "posts_count", "subscriber_count", "subscription_count")
 
     @extend_schema(responses=OutPutSerializer)
@@ -42,7 +42,7 @@ class RegisterApi(APIView):
                     ]
                 )
         confirm_password = serializers.CharField(max_length=255)
-        
+
         def validate_email(self, email):
             if BaseUser.objects.filter(email=email).exists():
                 raise serializers.ValidationError("email Already Taken")
@@ -51,7 +51,7 @@ class RegisterApi(APIView):
         def validate(self, data):
             if not data.get("password") or not data.get("confirm_password"):
                 raise serializers.ValidationError("Please fill password and confirm password")
-            
+
             if data.get("password") != data.get("confirm_password"):
                 raise serializers.ValidationError("confirm password is not equal to password")
             return data
@@ -62,7 +62,7 @@ class RegisterApi(APIView):
         token = serializers.SerializerMethodField("get_token")
 
         class Meta:
-            model = BaseUser 
+            model = BaseUser
             fields = ("email", "token", "created_at", "updated_at")
 
         def get_token(self, user):
