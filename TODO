@@ -20,4 +20,10 @@ TODO LIST
 [x] post urls
 [x] redis exp
 [x] redis cli
-[] redis cache
+[x] redis cache
+[x] Rabbitmq
+[x] celery
+[x] celery style
+[x] celery beat
+[x] celery + rabbitmq code 
+[] tmux with script

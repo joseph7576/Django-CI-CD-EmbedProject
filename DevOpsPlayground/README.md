@@ -38,3 +38,9 @@ docker compose -f docker-compose.dev.yml up -d
 ```
 python manage.py runserver
 ```
+
+8- celery and celery beat
+```bash
+celery -A devopsplayground.tasks worker -l info --without-gossip --without-mingle --without-heartbeat 
+celery -A devopsplayground.tasks beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+```

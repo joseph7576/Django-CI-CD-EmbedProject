@@ -19,6 +19,7 @@ LOCAL_APPS = [
     'devopsplayground.users.apps.UsersConfig',
     'devopsplayground.authentication.apps.AuthenticationConfig',
     'devopsplayground.blog.apps.BlogConfig',
+    'devopsplayground.tasks.apps.TasksConfig',
 ]
 
 THIRD_PARTY_APPS = [
