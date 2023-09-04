@@ -9,5 +9,13 @@ TODO LIST
 [x] user model - cookiecutter
 [x] register - cookiecutter
 [x] profile - cookiecutter
-[] jwt
-[] services
+[x] jwt
+[x] services for user
+[x] post models
+[x] sub models
+[] post apis
+[] sub apis
+[] post services
+[] post selectors
+[] post urls
+
