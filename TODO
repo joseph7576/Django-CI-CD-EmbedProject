@@ -13,9 +13,11 @@ TODO LIST
 [x] services for user
 [x] post models
 [x] sub models
-[] post apis
-[] sub apis
-[] post services
-[] post selectors
-[] post urls
-
+[x] post apis
+[x] sub apis
+[x] post services
+[x] post selectors
+[x] post urls
+[x] redis exp
+[x] redis cli
+[] redis cache
