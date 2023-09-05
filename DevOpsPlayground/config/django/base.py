@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='psql://user:password@127.0.0.1:5432/devopsplayground'),
+    'default': env.db('DATABASE_URL', default='psql://user:password@127.0.0.1:5433/devopsplayground'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
@@ -94,7 +94,7 @@ if os.environ.get('GITHUB_WORKFLOW'):
             'USER': 'user',
             'PASSWORD': 'password',
             'HOST': '127.0.0.1',
-            'PORT': '5432',
+            'PORT': '5433',
         }
     }
 

@@ -6,7 +6,7 @@ services:
     image: postgres:14.1
     container_name: postgres
     ports:
-      - 5432:5432
+      - 5433:5432
     environment:
       - POSTGRES_DB=devopsplayground
       - POSTGRES_USER=user
