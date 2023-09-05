@@ -3,7 +3,7 @@ from .services import profile_count_update
 
 
 @shared_task
-def profile_count_update():
+def profile_update():
     profile_count_update()
 
 

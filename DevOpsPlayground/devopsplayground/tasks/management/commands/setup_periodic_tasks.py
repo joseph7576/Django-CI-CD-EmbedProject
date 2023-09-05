@@ -3,7 +3,7 @@ from django.db import transaction
 from django.utils.timezone import get_default_timezone_name
 
 from django_celery_beat.models import IntervalSchedule, CrontabSchedule, PeriodicTask
-from devopsplayground.users.tasks import profile_count_update as profile_update_task, hello3 as hello3_task
+from devopsplayground.users.tasks import profile_update as profile_update_task, hello3 as hello3_task
 
 
 class Command(BaseCommand):

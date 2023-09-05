@@ -31,5 +31,6 @@ def profile_count_update():
             profile.posts_count = data.get('posts_count')
             profile.subscribers_count = data.get('subscribers_count')
             profile.subscriptions_count = data.get('subscriptions_count')
+            profile.save()
         except Exception as exc:
             print(exc)
