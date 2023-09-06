@@ -27,3 +27,6 @@ TODO LIST
 [x] celery beat
 [x] celery + rabbitmq code 
 [] tmux with script
+[x] profile cache
+[x] documentation
+[x] presentation
